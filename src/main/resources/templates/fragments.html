@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="GradeResult" id="graderesult" class="container-fluid">
+    <h2 style="visibility: hidden" class="card-header">Should be hidden!</h2>
+    <div class="card-body text-center">
+        <h3>You have an average of</h3>
+        <h1 th:text="${GR}">Grade</h1>
+        <h3
+                th:if="${TargetGrade != null}"
+                th:text="'You will need a grade of atleast ' + ${AG} + ' on your remaining assignments to get an average of ' + ${TargetGrade}">
+            Grade</h3>
+    </div>
+</div>
+
+<div th:fragment="GPAResult" id="GPAresult" class="container-fluid">
+    <h2 style="visibility: hidden" class="card-header">Should be hidden!</h2>
+    <div class="card-body text-center">
+        <h3>Your semester GPA is</h3>
+        <h1 th:text="${GPA}">GPA</h1>
+        <h3
+                th:if="${CumGPA != null}" th:text="'You have a cumulative GPA of ' + ${CumGPA}">CumGPA</h3>
+    </div>
+</div>
+</body>
+</html>

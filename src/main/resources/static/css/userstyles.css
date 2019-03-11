@@ -1,0 +1,401 @@
+h1,h2,h3,h4,h5,h6,span,div{
+    font-family: 'Quicksand', sans-serif;
+}
+hr{
+    margin-top: .5rem;
+}
+.nav-link{
+    font-family: 'QuickSand', sans-serif;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.nav-link.active{
+    background-color: #007bff !important;
+}
+
+
+#GradeAppForm{
+    transition: all .5s ease-out;
+    opacity: 0;
+    transform: translate3d(0, 200px, 0);
+    /*overflow-y: scroll;*/
+}
+
+#GPAAppForm{
+    display: none;
+    transition: all .5s ease-out;
+}
+#GPAapp{
+    width: 40%;
+    overflow-x: hidden;
+    /*animation: fadeInUp .7s ease-in-out forwards;*/
+    min-height: 50vh;
+    min-width: 45vh;
+    height: auto;
+    max-height: 85vh;
+    -webkit-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);;
+    transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+    will-change: transform, opacity;
+    -webkit-transform: rotateZ(360deg);
+}
+
+#credits{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    font-weight: bold;
+}
+
+#FormError, #GPAFormError{
+    position: absolute;
+    /*color: red;*/
+    /*font-weight: bold;*/
+    display: none;
+    /*height: 0;*/
+}
+#persontest{
+    position: fixed;
+    width: 30vw;
+    min-width: 300px;
+    height: auto;
+    right: -190px;
+    transform: translateX(100%);
+    top: 8%;
+}
+
+.deletebut{
+    width: 0;
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+.assignment:hover .deletebut{
+    display: inline;
+}
+
+#SchoolGirl{
+    position: fixed;
+    width: 30vw;
+    min-width: 300px;
+    height: auto;
+    left: -250px;
+    transform: translateX(-100%);
+    top: 10%;
+}
+
+.gradepick option{
+    display: none !important;
+}
+
+#gradeapp{
+    width: 40%;
+    overflow-x: hidden;
+    /*animation: fadeInUp .7s ease-in-out forwards;*/
+    min-height: 50vh;
+    min-width: 45vh;
+    height: auto;
+    max-height: 85vh;
+    -webkit-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);;
+    transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+    will-change: transform, opacity;
+    -webkit-transform: rotateZ(360deg);
+}
+#Webtitle, #tabpills{
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#gradeappbody, #GPAappbody{
+    position: relative;
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-transition: transform .5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.schoolrow .filter-option-inner-inner{
+    text-align: center !important;
+}
+.schoolrow{
+    text-align: center !important;
+}
+
+p{
+    margin-bottom: 10px;
+}
+/*.formmoveleft{*/
+    /*animation: Formmoveleft;*/
+    /*animation-duration: .5s;*/
+    /*animation-fill-mode: forwards;*/
+    /*animation-timing-function: ease-out;*/
+/*}*/
+/*.formmoveright{*/
+    /*animation: Formmoveright;*/
+    /*animation-duration: .5s;*/
+    /*animation-fill-mode: forwards;*/
+    /*animation-timing-function: ease-out;*/
+/*}*/
+/*.resultmoveleft{*/
+    /*animation: Resultmoveleft;*/
+    /*animation-duration: .5s;*/
+    /*animation-fill-mode: forwards;*/
+    /*animation-timing-function: ease-out;*/
+/*}*/
+/*.resultmoveright{*/
+    /*animation: Resultmoveright;*/
+    /*animation-duration: .5s;*/
+    /*animation-fill-mode: forwards;*/
+    /*animation-timing-function: ease-out;*/
+/*}*/
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fadein{
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: .5s;
+}
+
+.shake{
+    animation: shake-horizontal;
+    animation-duration: .25s;
+    animation-timing-function: ease-out;
+}
+@-webkit-keyframes shake-horizontal {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+}
+@keyframes shake-horizontal {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+}
+
+#gradeappbody h5, #GPAappbody h5{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#GPAAppSubmitBut, #GradeAppSubmitBut{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: white;
+    background-color: #17C671;
+    transition: background-color .5s;
+}
+
+#GPAAppSubmitButMobile, #GradeAppSubmitButMobile{
+    display: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: white;
+    background-color: #17C671;
+    transition: all .5s;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    height: 80px;
+}
+
+#GradeAppSubmitText, #GPAAppSubmitText{
+    display: inline-block;
+}
+
+#schoolselect{
+    height: 30px !important;
+}
+#graderesult, #GPAresult{
+    position: absolute;
+    -webkit-transition: transform .5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition:transform .5s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateX(1000px);
+}
+
+
+#SchoolGirl, #persontest{
+    -webkit-transition: transform .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition:         transform .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.gabhead {
+    font-size: 1.5vw;
+}
+
+.fadeinup{
+    animation: fadeInUp .25s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+.fadeinupintro{
+    animation: fadeInUp .5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: .8s;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 200px, 0);
+        transform: translate3d(0, 200px, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#Calcloader, #Calcloader2{
+    display: none;
+}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    margin: 0 auto;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border: 6px solid;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@media (max-width: 767px) {
+    /* CSS goes here */
+    /*select,*/
+    /*textarea,*/
+    /*input {*/
+        /*font-size: 16px;*/
+    /*}*/
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    #gradeapp, #GPAapp{
+        width: 100%;
+        overflow-y: scroll;
+        height: 100%;
+        max-height: none;
+        border-radius: 0;
+    }
+    #persontest{
+        top:25%;
+        z-index: -1;
+    }
+    .mobhead{
+        text-align:center;
+    }
+    #SchoolGirl{
+        top:25%;
+        z-index: -1;
+    }
+    .form-control-sm{
+        line-height: 1.8;
+    }
+    .container-fluid .btn-mobsize{
+        height: 50px;
+    }
+    .btn-mobsize{
+        height: 80px;
+        font-size: 15px;
+    }
+    #credits{
+        display: none;
+    }
+    #GradeAppSubmitButMobile, #GPAAppSubmitButMobile{
+        border-radius: 0;
+        transition: all;
+        display: block;
+        opacity: 0;
+        animation: fadeIn .25s ease-in forwards;
+        animation-delay: .3s;
+    }
+    #GPAAppSubmitTextMobile, #GradeAppSubmitTextMobile{
+        font-size: 20px;
+        display: inline-block;
+    }
+    #GradeAppSubmitBut, #GPAAppSubmitBut{
+        display: none;
+    }
+    
+}
