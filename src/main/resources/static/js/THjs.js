@@ -117,7 +117,8 @@ $(document).ready(function () {
     }, 300);
      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
         // mobile!
-        // $('.selectpicker').selectpicker('mobile');
+        //  $('.selectpicker').selectpicker('mobile');
+        //  $.fn.selectpicker.Constructor.DEFAULTS.mobile = true;
         setTimeout(function () {
             document.getElementById("persontest").style.display = "none";
             document.getElementById("SchoolGirl").style.display = "none";
