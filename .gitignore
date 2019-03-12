@@ -9,6 +9,7 @@ target/
 .idea/
 *.iml
 *.iws
+*.properties
 
 # Log file
 *.log
