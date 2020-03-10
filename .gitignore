@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+#MacOS files
+.DS_Store
+
 # Maven
 log/
 target/
